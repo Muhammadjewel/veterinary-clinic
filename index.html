@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,11 @@
 </head>
 <body>
 
+  <!--
+    To'liq sahifa uchun sarlavha berildi. Agar maketda sahifaning nomiga mos sarlavha bo'lmasa, shu kabi usulda sahifa nomini berkitib joylash mumkin. SEO (qidiruv tizimidagi natija) uchun foydasi bo'ladi.
+
+    visually-hidden bo'lgan sarlavhalarga biron stil bermaganimiz uchun ularga mos BEM yondashuvidagi qo'shimcha class berish kerak emas.
+  -->
   <h1 class="visually-hidden">Оржоникидзевская Ветеринарная клиника</h1>
 
 
@@ -16,16 +21,22 @@
 
   <header class="site-header">
 
-    <h2 class="visually-hidden">Контактные данные</h2>
-
     <!-- Site header top -->
 
-    <div class="site-header__top">
+    <section class="site-header__top">
+      <!--
+        Sayt shapkasi tepasi uchun ham sarlavha berildi. Shapkaning bu qismida kontakt bo'yicha muhim ma'lumotlar bo'lgani uchun ularni section ichiga olish sahifani eshituvchilar uchun landmark - muhim joyni anglatuvchi qism bo'lib tura oladi.
+      -->
+      <h2 class="visually-hidden">Контактные данные и время приёма</h2>
+
       <div class="container site-header__top-container">
         <address class="company-address site-header__company-address">г. Мариуполь, проспект Победы, 48а</address>
 
         <!-- Phone numbers -->
 
+        <!--
+          Telefon raqamlari uchun alohida bo'lim. Bu ham imkoniyati cheklanganlar uchun qulaylik yaratib berishi mumkin.
+        -->
         <section class="phones">
           <h3 class="visually-hidden">Номеры телефона</h3>
 
@@ -44,9 +55,16 @@
 
         <!-- Work hours -->
 
+        <!--
+          Bu yerni ham kontakt uchun ma'lumotlar darajasidagi muhim bo'lim deb hisoblay olamiz.
+        -->
         <section class="work-hours">
           <h3 class="visually-hidden">Время приёма</h3>
 
+          <!--
+            Quyida kun nomlari qalin ko'rinishda kelishi kerak. <b></b> ning o'rniga span berganim sababi - b ning o'zidagi qalinlikni hisobga olib unga CSSda yana takroran qalin bo'lish stilini qoldirib ketish mumkin. Shunga neytral bo'lgan element spanni ishlatib, keyin CSSda uni qalin qilib qo'yamiz yoki bemalol b ni ishlatib, unga CSSda takroran shu stilni berish mumkin.
+            Sayt dizayniga ko'ra qabul soatlari uchun qo'shimcha elementdan foydalanish zarur emasga o'xshadi. Shuning uchun ular o'z holicha qoldirilgan.
+          -->
           <div class="work-hours__line">
             <span class="work-hours__day-name">Пн - Пт</span> 8:00 - 18:00
           </div>
@@ -54,9 +72,9 @@
             <span class="work-hours__day-name">Сб - Вс</span> 8:00 - 14:00
           </div>
         </section>
-        
+
       </div><!-- container -->
-    </div><!-- site-header__top -->
+    </section><!-- site-header__top -->
 
   </header>
 
