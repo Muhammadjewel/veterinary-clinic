@@ -261,6 +261,10 @@ img {
   margin-right: 17px;
 }
 
+.work-hours__day-name {
+  font-weight: 500;
+}
+
 .work-hours__time {
   font-weight: normal;
 }
