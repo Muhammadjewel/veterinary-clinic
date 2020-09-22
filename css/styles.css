@@ -1,10 +1,22 @@
 /* =============== CONTENTS =============== */
+/* CUSTOM PROPS / VARIABLES */
 /* FONTS */
 /* BOX-SIZING */
 /* GLOBAL STYLES */
 /* HELPER / GLOBAL COMPONENTS */
 /* SITE SECTIONS */
 /* MEDIA QUERIES */
+
+
+
+/*------------------------------------*\
+  #CUSTOM PROPS / VARIABLES
+\*------------------------------------*/
+
+:root {
+  --text-color: #333;
+  --yellow-color: #ffbd54;
+}
 
 
 
@@ -121,4 +133,152 @@ img {
 
 .site-content {
   flex-grow: 1;
+}
+
+
+
+/* COMPANY-ADDRESS */
+
+.company-address {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.company-address::before {
+  width: 14px;
+  height: 13px;
+  margin-right: 9px;
+  background-image: url("../img/icon-house.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+
+
+/* PHONES */
+
+.phones {
+  display: flex;
+}
+
+.phones--align-center {
+  align-items: center;
+}
+
+.phones::before {
+  width: 13px;
+  height: 13px;
+  margin-right: 9px;
+  background-image: url("../img/icon-phone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.phones__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.phones__list--row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phones__item {
+  position: relative;
+  z-index: 1;
+}
+
+.phones__list--row .phones__item + .phones__item {
+  margin-left: 22px;
+}
+
+.phones__list--row .phones__item + .phones__item::before {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--yellow-color);
+  content: "";
+}
+
+.phones__link {
+  color: var(--text-color);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.phones__link:hover {
+  color: var(--yellow-color);
+}
+
+.phones__link:active {
+  opacity: 0.5;
+}
+
+
+
+/* WORK-HOURS */
+
+.work-hours {
+  display: flex;
+}
+
+.work-hours::before {
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  background-image: url("../img/icon-schedule.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.work-hours--align-center {
+  align-items: center;
+}
+
+.work-hours__list {
+  display: flex;
+}
+
+.work-hours__list--column {
+  flex-direction: column;
+}
+
+.work-hours__line:first-child {
+  margin-right: 17px;
+}
+
+.work-hours__time {
+  font-weight: normal;
+}
+
+
+
+/* SITE-HEADER */
+
+.site-header__top {
+  padding: 10px;
+  font-weight: 500;
+  background-color: #F9F8F8;
+}
+
+.site-header__top-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 192px;
 }

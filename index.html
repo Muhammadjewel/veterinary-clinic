@@ -39,18 +39,18 @@
         <!--
           Telefon raqamlari uchun alohida bo'lim. Bu ham imkoniyati cheklanganlar uchun qulaylik yaratib berishi mumkin.
         -->
-        <section class="phones">
+        <section class="phones phones--align-center">
           <h3 class="visually-hidden">Номеры телефона</h3>
 
-          <ul class="phones__list">
+          <ul class="phones__list phones__list--row">
             <li class="phones__item">
-              <a href="tel:+(067)634-75-74" class="phones__link">(067) 634 - 75 - 74</a>
+              <a class="phones__link" href="tel:+(067)634-75-74">(067) 634 - 75 - 74</a>
             </li>
             <li class="phones__item">
-              <a href="tel:+(0637)57-01-31" class="phones__link">(0637) 57 - 01 - 31</a>
+              <a class="phones__link" href="tel:+(0637)57-01-31">(0637) 57 - 01 - 31</a>
             </li>
             <li class="phones__item">
-              <a href="tel:+(098)266-43-89" class="phones__link">(098) 266 - 43 - 89</a>
+              <a class="phones__link" href="tel:+(098)266-43-89">(098) 266 - 43 - 89</a>
             </li>
           </ul>
         </section>
@@ -60,19 +60,22 @@
         <!--
           Bu yerni ham kontakt uchun ma'lumotlar darajasidagi muhim bo'lim deb hisoblay olamiz.
         -->
-        <section class="work-hours">
+        <section class="work-hours work-hours--align-center">
           <h3 class="visually-hidden">Время приёма</h3>
 
           <!--
             Quyida kun nomlari qalin ko'rinishda kelishi kerak. <b></b> ning o'rniga span berganim sababi - b ning o'zidagi qalinlikni hisobga olib unga CSSda yana takroran qalin bo'lish stilini qoldirib ketish mumkin. Shunga neytral bo'lgan element spanni ishlatib, keyin CSSda uni qalin qilib qo'yamiz yoki bemalol b ni ishlatib, unga CSSda takroran shu stilni berish mumkin.
-            Sayt dizayniga ko'ra qabul soatlari uchun qo'shimcha elementdan foydalanish zarur emasga o'xshadi. Shuning uchun ular o'z holicha qoldirilgan.
           -->
-          <div class="work-hours__line">
-            <span class="work-hours__day-name">Пн - Пт</span> 8:00 - 18:00
-          </div>
-          <div class="work-hours__line">
-            <span class="work-hours__day-name">Сб - Вс</span> 8:00 - 14:00
-          </div>
+          <div class="work-hours__list">
+            <div class="work-hours__line">
+              <span class="work-hours__day-name">Пн - Пт</span>
+              <span class="work-hours__time">8:00 - 18:00</span>
+            </div>
+            <div class="work-hours__line">
+              <span class="work-hours__day-name">Сб - Вс</span>
+              <span class="work-hours__time">8:00 - 14:00</span>
+            </div>
+          </div><!-- work-hours__list -->
         </section>
 
       </div><!-- container -->
