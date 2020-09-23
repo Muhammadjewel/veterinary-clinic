@@ -86,6 +86,7 @@ body {
   font-family: "Futura PT", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #f9f9f9;
   color: #222;
 }
 
@@ -285,4 +286,81 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 192px;
+}
+
+
+
+/* PAGE-HERO */
+
+.page-hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.page-hero__container {
+  padding-left: 110px;
+}
+
+.page-hero__inner {
+  max-width: 450px;
+}
+
+.page-hero__heading {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 70px;
+  line-height: 64px;
+}
+
+.page-hero__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 20px;
+  color: #949494;
+}
+
+/* SERVICES-PAGE */
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+  list-style-type: none;
+}
+
+.services__item {
+  width: 305px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.service::before {
+  width: 87px;
+  height: 78px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  content: "";
+}
+
+.service__name {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.service__description {
+  margin-top: 0;
+  margin-bottom: 26px;
 }
